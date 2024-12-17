@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    button{
+        margin: 2px;
+        width: 98%;
+        height: 25px;
+        border-radius: 5px;
+        transition-duration: 1s;
+    }
+    button:hover{
+        width: 100%;
+        background-color: black;
+        color:white;
+    }
+</style>
+<body style="background-color:rgb(0, 0, 0);">
+    <button onclick="parent.main.src='pag0.html?rnd='+Math.random()">pag0</button>
+    <button onclick="parent.main.src='pag1.html?rnd='+Math.random()">pag1</button>
+    <button onclick="parent.main.src='pag2.html?rnd='+Math.random()">pag2</button>
+    <hr>
+    <button onclick="parent.divmenu.style.right='-298px';">close menu</button>
+    <button onclick="parent.divmenu.style.display='none'">hidemenu</button>
+</body>
+</html>
